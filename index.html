@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="world.png">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Learn Country Names</title>
+</head>
+<body>
+  <div id="container">
+
+    <div id="toolbar">
+      <div id="selection-tools">
+        <button type="button" id="clear-selection-btn">Clear Selection</button>
+        <button type="button" id="start-btn" disabled>Start</button>
+      </div>
+      <div id="test-tools">
+        <div id="test-tools-flexbox">
+          <div id="right-answers">0</div>
+          <div id="wrong-answers">0</div>
+          <button type="button" id="select-btn">New session</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="map"></div>
+
+    <div id="country-name"></div>
+
+  </div>
+
+  <div id="tooltip"></div>
+
+  <script src="/libs/d3.v7.min.js" charset="utf-8"></script>
+  <script src="/libs/topojson.v3.0.2.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

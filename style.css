@@ -1,0 +1,158 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
+.boundary {
+    fill: #ccc;
+    stroke: #888;
+    stroke-linejoin: round;
+}
+
+svg {
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid #ccc;*/
+}
+
+.overlay {
+    fill: none;
+    pointer-events: all;
+}
+
+path {
+    stroke-width: 1px;
+    vector-effect: non-scaling-stroke;
+}
+
+/*
+#map{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+*/
+
+#tooltip{
+    position: absolute;
+    z-index: 2;
+
+    color: black;
+    background: lightyellow;
+
+    width: fit-content;
+    block-size: fit-content;
+    padding: 5px;
+    display: none;
+    border: 1px solid black;
+}
+
+#tooltip > * {
+    vertical-align: middle;
+}
+
+.flag {
+    width: 30px;
+    height: auto;
+}
+
+#container {
+    margin: 0;
+    padding: 0;
+    margin-top: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    /*background-color: aqua;*/
+}
+
+#map {
+    margin: 0;
+    padding: 0;
+}
+
+
+@media (orientation: landscape) {
+    #container {
+        width: 86vmin;
+    }
+
+    #map {
+        width: 86vmin;
+        height: 86vmin;
+    }
+}
+
+@media (orientation: portrait) {
+    #container {
+        width: 96vmin;
+    }
+
+    #map {
+        width: 96vmin;
+        height: 96vmin;
+    }
+}
+
+#country-name {
+    margin-top: 4px;
+    text-align: center;
+}
+
+#country-name * {
+    vertical-align: middle;
+}
+
+#test-tools {
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#test-tools-flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+}
+
+#test-tools-flexbox > div {
+    /*border: 1px solid white;*/
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 4px 10px 4px 10px;
+    background-color: #ddd;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 1px solid grey;
+    width: 17ch;
+}
+
+#toolbar {
+    padding: 2px 0px 2px 0px;
+    /*border: 1px solid #ccc;*/
+}
+
+#right-answers {
+    background-color: lightgreen;
+}
+
+#wrong-answers {
+    background-color: lightcoral;
+}
+
