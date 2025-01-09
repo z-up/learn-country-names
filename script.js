@@ -96,7 +96,7 @@
                 const a3 = d.properties.a3;
                 const name = d.properties.name;
                 div.innerHTML =
-                    `<img class="flag" src="/svg_flags/${a3}.svg" /> <span>${name}</span>`;
+                    `<img class="flag" src="svg_flags/${a3}.svg" /> <span>${name}</span>`;
                 div.style.display = 'block';
             }
             d3.selectAll('path').attr('fill', "#ccc");
@@ -225,7 +225,7 @@
         const div = document.getElementById("country-name");
         const a3 = pickedCountry.a3;
         const name = pickedCountry.name;
-        div.innerHTML = `<img class="flag" src="/svg_flags/${a3}.svg" /> <span>${name}</span>`;
+        div.innerHTML = `<img class="flag" src="svg_flags/${a3}.svg" /> <span>${name}</span>`;
 
 
     }
