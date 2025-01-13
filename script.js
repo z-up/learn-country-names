@@ -140,7 +140,7 @@
         .attr("width", "100%")
         .attr("height", "100%");
 
-    d3.json('geodata/110m.json').then(function (data) {
+    d3.json('geodata/50m.json').then(function (data) {
         countries = topojson.feature(data, data.objects.countries);
 
         map = svg.append('g').attr('class', 'boundary');
